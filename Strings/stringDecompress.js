@@ -20,7 +20,7 @@ function decompress(compressed) {
 }
 const compressed = ["a2", "b", "c", "d2"];
 console.log(decompress(compressed));
-
+  
 //
 //
 //
