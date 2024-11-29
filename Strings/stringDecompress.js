@@ -29,7 +29,6 @@ console.log(decompress(compressed));
 //
 //
 function decompress(str) {
-  let Arr = [];
   let DecomArr = [];
   for (let i = 0; i < str.length; i++) {
     let char = str[i];
