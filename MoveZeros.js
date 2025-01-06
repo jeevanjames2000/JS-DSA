@@ -17,5 +17,17 @@ var moveZeroes = function (nums) {
   console.log(left, right);
   return left.concat(right);
 };
-
 console.log(moveZeroes([0, 0, 1, 3, 12, 0]));
+
+function Move(n) {
+  let nonZeroIndex = 0;
+  for (let i = 0; i < n.length; i++) {
+    if (n[i] !== 0) {
+      [n[nonZeroIndex], n[i]] = [n[i], n[nonZeroIndex]];
+      nonZeroIndex++;
+    }
+  }
+  return n;
+}
+
+console.log(Move([0, 0, 1, 3, 12, 0]));
