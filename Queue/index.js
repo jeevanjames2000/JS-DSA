@@ -6,7 +6,6 @@ class Node{
 }
 class MainQueue {
     constructor(value){
-
         const newNode= new Node(value)
         this.first = newNode;
         this.last = newNode;
